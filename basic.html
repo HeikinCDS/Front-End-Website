@@ -6,16 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Malaysian Street Food Reviews</title>
   <link rel="stylesheet" href="basic.css">
-
-  <script>
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.querySelector('.nav-menu');
-
-    hamburger.addEventListener('click', () => {
-      navMenu.classList.toggle('show');
-    });
-  </script>
-
 </head>
 
 <body>
@@ -24,6 +14,11 @@
       <img src="mfelogo.png" alt="logo" class="logo-pic" width="100" height="100">
       <a>Malaysian Food Explorer</a>
     </div>
+
+    <div class="hamburger" id="hamburger">
+      ☰
+    </div>
+
     <nav class="nav-menu">
       <a href="index.html">Home</a>
       <a href="top10.html">Top 10</a>
@@ -44,9 +39,6 @@
         </div>
       </div>
     </div>
-    <div class="hamburger" id="hamburger">
-      ☰
-    </div>
 
   </header>
 
@@ -63,6 +55,17 @@
       <img src="tw.png" alt="Twitter">
     </p>
   </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
+  </script>
+
+
 </body>
 
 </html>

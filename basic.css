@@ -195,29 +195,29 @@ footer img{
   overflow: hidden;
 }
 
-/* Mobile view */
+/* Mobile first fix */
 @media (max-width: 768px) {
   header {
     flex-wrap: nowrap;
-    /* keep items in one line */
+    /* prevent nav from dropping */
   }
 
-  .logo {
-    font-size: 1.2em;
-    /* smaller logo text */
+  .logo a {
+    font-size: 1em;
+    /* shrink title */
   }
 
   .nav-menu {
     display: none;
-    /* hidden by default */
+    /* hide menu by default */
     flex-direction: column;
-    width: 100%;
     background-color: #ead9c7;
     position: absolute;
-    top: 70px;
-    /* below header */
+    top: 80px;
+    /* just below header */
     left: 0;
-    padding: 10px 0;
+    width: 100%;
+    text-align: center;
   }
 
   .nav-menu.show {
@@ -228,17 +228,12 @@ footer img{
   .hamburger {
     display: block;
     font-size: 2em;
-    cursor: pointer;
-    margin-left: 10px;
-  }
-
-  .login-wrapper {
     margin-left: auto;
-    /* keep login button at the end */
+    cursor: pointer;
   }
 }
 
-/* Desktop view */
+/* Desktop */
 .hamburger {
   display: none;
 }

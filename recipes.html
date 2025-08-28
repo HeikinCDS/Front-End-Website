@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malaysian Street Food Recipes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="recipes.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg " id="navbar">
+      <div class="container-fluid">
+        <div class="logo">
+          <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+            <img src="icon/mfelogo.png" alt="logo" class="logo-pic" width="100" height="100">
+            <span onclick="window.location.href='index.html'">Malaysian Food Explorer</span>
+          </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="top10.html">Top 10</a></li>
+            <li class="nav-item"><a class="nav-link" href="recipes.html">Recipes</a></li>
+            <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="places.html">Recommended Places</a></li>
+            <li class="nav-item"><a class="nav-link" href="spin.html">Spin</a></li>
+            <li class="nav-item"><a class="nav-link" href="map.html">Map</a></li>
+            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="login-wrapper">
+        <div class="user-dropdown">
+          <img src="icon/profilepic.png" class="profile-pic" width="40" />
+          <span id="userprofile"></span>
+          <div class="dropdown-content" id="dropdownContent">
+            <a href="#" id="userdrop1"></a>
+            <a href="#" id="userdrop2"></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main class="maincontain">
+    <h2>Street Food Recipes</h2>
+
+    <div class="search-filter-section">
+      <input type="text" id="searchInput" placeholder=" Search recipes..." />
+      <select id="sortSelect">
+        <option value="default">Sort by</option>
+        <option value="title">Alphabetically</option>
+        <option value="time">Total Time</option>
+        <option value="difficulty">Difficulty</option>
+      </select>
+    </div>
+
+    <div class="recipe-container">
+      <!-- Nasi Lemak -->
+      <div class="recipe-card">
+        <img src="recipes/Nasi_LemakD.jpg" alt="Nasi Lemak" class="recipe-image">
+        <div class="recipe-content">
+          <h2 class="recipe-title">Homemade Nasi Lemak</h2>
+          <div class="recipe-meta">
+            <span> Prep: 15 mins</span>
+            <span> Cook: 30 mins</span>
+            <span> Difficulty: Easy</span>
+          </div>
+
+          <div class="highlights">
+            <p><strong>⏱ Total Time:</strong> 45 mins</p>
+            <p><strong>🍽 Servings:</strong> 2 people</p>
+            <p><strong>🌶 Spice Level:</strong> Mild</p>
+          </div>
+
+          <div class="gallery">
+            <img src="recipes/Nasi_LemakI.jpg" alt="Fresh Ingredients">
+            <img src="recipes/Nasi_LemakCP.jpg" alt="Cooking Process">
+            <img src="recipes/Nasi_LemakD2.jpg" alt="Final Plated Dish">
+          </div>
+
+          <div class="recipe-details">
+            <div class="recipe-column">
+              <h3>🧂 Ingredients (2 servings)</h3>
+              <ul>
+                <li>1 cup fragrant rice</li>
+                <li>1 cup coconut milk</li>
+                <li>1 cup water</li>
+                <li>2 pandan leaves (knotted)</li>
+                <li>1 slice ginger</li>
+                <li>1/2 tsp salt</li>
+                <li><strong>Sides:</strong></li>
+                <li>50g fried peanuts</li>
+                <li>50g fried anchovies</li>
+                <li>1 cucumber (sliced)</li>
+                <li>2 boiled eggs</li>
+                <li>4 tbsp sambal</li>
+              </ul>
+            </div>
+
+            <div class="recipe-column">
+              <h3>👨‍🍳 Instructions</h3>
+              <ol>
+                <li>Rinse the rice and drain well.</li>
+                <li>Add rice, coconut milk, water, pandan leaves, ginger, and salt to rice cooker. Mix well.</li>
+                <li>Cook as usual.</li>
+                <li>Let sit for 10 minutes, then remove pandan and ginger.</li>
+                <li>Fry peanuts and anchovies until golden and crispy.</li>
+                <li>Slice cucumber and boil eggs, cut in half.</li>
+                <li>Plate the rice and arrange sides around it.</li>
+                <li>Serve with sambal.</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="tips">
+            <p><strong>💡 Pro Tip:</strong> If you don't have pandan leaves, use a drop of pandan essence. Sambal can be
+              store-bought or homemade.</p>
+          </div>
+
+          <div class="tips">
+            <p><strong>🌟 Did you know?</strong> Nasi Lemak was originally a farmer's breakfast to provide energy for
+              long working days!</p>
+          </div>
+
+          <div class="reviews">
+            <h3>💬 What Others Say</h3>
+            <p><em>"Dang Dang Dang! Best Nasi Lemak recipe ever!"</em></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ikan Badar -->
+      <div class="recipe-card">
+        <img src="recipes/Ikan_BakarD.png" alt="Ikan Badar" class="recipe-image">
+        <div class="recipe-content">
+          <h2 class="recipe-title">Ikan Badar Bakar</h2>
+          <div class="recipe-meta">
+            <span> Prep: 20 mins</span>
+            <span> Cook: 15 mins</span>
+            <span> Difficulty: Medium</span>
+          </div>
+
+          <div class="highlights">
+            <p><strong>⏱ Total Time:</strong> 35 mins</p>
+            <p><strong>🍽 Servings:</strong> 3 people</p>
+            <p><strong>🌶 Spice Level:</strong> Medium</p>
+          </div>
+
+          <div class="gallery">
+            <img src="recipes/Ikan_BakarI.png" alt="Fresh Fish">
+            <img src="recipes/Ikan_BakarCP.png" alt="Grilling Process">
+            <img src="recipes/Ikan_BakarD2.png" alt="Final Plated Dish">
+          </div>
+
+          <div class="recipe-details">
+            <div class="recipe-column">
+              <h3>🧂 Ingredients</h3>
+              <ul>
+                <li>1 whole badar fish (cleaned)</li>
+                <li>3 tbsp tamarind paste</li>
+                <li>2 tbsp palm sugar</li>
+                <li>6 red chilies</li>
+                <li>4 shallots</li>
+                <li>3 garlic cloves</li>
+                <li>1 inch galangal</li>
+                <li>2 lemongrass stalks</li>
+                <li>Salt to taste</li>
+                <li>Banana leaves for wrapping</li>
+              </ul>
+            </div>
+
+            <div class="recipe-column">
+              <h3>👨‍🍳 Instructions</h3>
+              <ol>
+                <li>Blend chilies, shallots, garlic, and galangal into paste.</li>
+                <li>Mix paste with tamarind, palm sugar, and salt.</li>
+                <li>Marinate fish with the paste for 15 minutes.</li>
+                <li>Wrap fish in banana leaves.</li>
+                <li>Grill over charcoal for 12-15 minutes, turning once.</li>
+                <li>Serve hot with rice and vegetables.</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="tips">
+            <p><strong>💡 Pro Tip:</strong> Use charcoal for authentic smoky flavor. If banana leaves are unavailable,
+              use aluminum foil.</p>
+          </div>
+
+          <div class="reviews">
+            <h3>💬 What Others Say</h3>
+            <p><em>"The smoky flavor is incredible! Reminds me of my grandmother's cooking."</em></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mee Udang -->
+      <div class="recipe-card">
+        <img src="recipes/Mee_Bandung_MuarD.png" alt="Mee Udang" class="recipe-image">
+        <div class="recipe-content">
+          <h2 class="recipe-title">Mee Udang Muar</h2>
+          <div class="recipe-meta">
+            <span> Prep: 30 mins</span>
+            <span> Cook: 25 mins</span>
+            <span> Difficulty: Medium</span>
+          </div>
+
+          <div class="highlights">
+            <p><strong>⏱ Total Time:</strong> 55 mins</p>
+            <p><strong>🍽 Servings:</strong> 4 people</p>
+            <p><strong>🌶 Spice Level:</strong> Medium</p>
+          </div>
+
+          <div class="gallery">
+            <img src="recipes/Mee_Bandung_MuarI.png" alt="Ingredients">
+            <img src="recipes/Mee_Bandung_MuarCP.png" alt="Cooking Process">
+            <img src="recipes/Mee_Bandung_MuarD2.png" alt="Final Plated Dish">
+          </div>
+
+          <div class="recipe-details">
+            <div class="recipe-column">
+              <h3>🧂 Ingredients</h3>
+              <ul>
+                <li>400g yellow noodles</li>
+                <li>300g prawns (peeled, reserve shells)</li>
+                <li>200g bean sprouts</li>
+                <li>3 eggs</li>
+                <li>4 shallots (sliced)</li>
+                <li>3 garlic cloves</li>
+                <li>2 tbsp chili paste</li>
+                <li>2 tbsp dark soy sauce</li>
+                <li>1 tbsp light soy sauce</li>
+                <li>Salt and pepper to taste</li>
+                <li>Spring onions for garnish</li>
+              </ul>
+            </div>
+
+            <div class="recipe-column">
+              <h3>👨‍🍳 Instructions</h3>
+              <ol>
+                <li>Fry prawn shells until fragrant, add water to make stock.</li>
+                <li>Strain stock and set aside.</li>
+                <li>Heat oil, fry shallots and garlic until fragrant.</li>
+                <li>Add chili paste, stir for 1 minute.</li>
+                <li>Add prawns, cook until pink.</li>
+                <li>Add noodles, bean sprouts, and stock.</li>
+                <li>Season with soy sauces, salt, and pepper.</li>
+                <li>Crack eggs into pan, stir gently.</li>
+                <li>Garnish with spring onions and serve hot.</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="tips">
+            <p><strong>💡 Pro Tip:</strong> Don't throw away prawn shells - they make the most flavorful stock!</p>
+          </div>
+
+          <div class="reviews">
+            <h3>💬 What Others Say</h3>
+            <p><em>"Tastes exactly like the famous Muar version! The prawn stock makes all the difference."</em></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Char Kuey Teow -->
+      <div class="recipe-card">
+        <img src="recipes/Char_Kuey_TeowD.png" alt="Char Kuey Teow" class="recipe-image">
+        <div class="recipe-content">
+          <h2 class="recipe-title">Char Kuey Teow</h2>
+          <div class="recipe-meta">
+            <span> Prep: 15 mins</span>
+            <span> Cook: 10 mins</span>
+            <span> Difficulty: Medium</span>
+          </div>
+
+          <div class="highlights">
+            <p><strong>⏱ Total Time:</strong> 25 mins</p>
+            <p><strong>🍽 Servings:</strong> 2 people</p>
+            <p><strong>🌶 Spice Level:</strong> Medium</p>
+          </div>
+
+          <div class="gallery">
+            <img src="recipes/Char_Kuey_TeowI.png" alt="Fresh Ingredients">
+            <img src="recipes/Char_Kuey_TeowCP.png" alt="Cooking Process">
+            <img src="recipes/Char_Kuey_TeowD2.png" alt="Final Plated Dish">
+          </div>
+
+          <div class="recipe-details">
+            <div class="recipe-column">
+              <h3>🧂 Ingredients</h3>
+              <ul>
+                <li>400g fresh flat rice noodles</li>
+                <li>200g prawns</li>
+                <li>100g cockles (optional)</li>
+                <li>2 Chinese sausages (sliced)</li>
+                <li>200g bean sprouts</li>
+                <li>2 eggs</li>
+                <li>3 garlic cloves (minced)</li>
+                <li>2 tbsp dark soy sauce</li>
+                <li>1 tbsp light soy sauce</li>
+                <li>1 tbsp chili paste</li>
+                <li>Chives for garnish</li>
+              </ul>
+            </div>
+
+            <div class="recipe-column">
+              <h3>👨‍🍳 Instructions</h3>
+              <ol>
+                <li>Heat wok over high heat with oil.</li>
+                <li>Fry garlic until fragrant.</li>
+                <li>Add sausages, cook until slightly crispy.</li>
+                <li>Add prawns and cockles, stir-fry briefly.</li>
+                <li>Push ingredients to one side, scramble eggs.</li>
+                <li>Add noodles, both soy sauces, and chili paste.</li>
+                <li>Toss everything together over high heat.</li>
+                <li>Add bean sprouts, stir-fry for 1 minute.</li>
+                <li>Garnish with chives and serve immediately.</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="tips">
+            <p><strong>💡 Pro Tip:</strong> High heat is crucial for wok hei (breath of the wok). Work fast and don't
+              overcook!</p>
+          </div>
+
+          <div class="reviews">
+            <h3>💬 What Others Say</h3>
+            <p><em>"Perfect wok hei! Just like the street stalls in Penang."</em></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nasi Kerabu -->
+      <div class="recipe-card">
+        <img src="recipes/Nasi_KerabuD.png" alt="Nasi Kerabu" class="recipe-image">
+        <div class="recipe-content">
+          <h2 class="recipe-title">Nasi Kerabu</h2>
+          <div class="recipe-meta">
+            <span> Prep: 25 mins</span>
+            <span> Cook: 30 mins</span>
+            <span> Difficulty: Medium</span>
+          </div>
+
+          <div class="highlights">
+            <p><strong>⏱ Total Time:</strong> 55 mins</p>
+            <p><strong>🍽 Servings:</strong> 4 people</p>
+            <p><strong>🌶 Spice Level:</strong> Medium</p>
+          </div>
+
+          <div class="gallery">
+            <img src="recipes/Nasi_KerabuI.png" alt="Fresh Ingredients">
+            <img src="recipes/Nasi_KerabuCP.png" alt="Fresh Ingredients">
+            <img src="recipes/Nasi_KerabuD2.png" alt="Final Plated Dish">
+          </div>
+
+          <div class="recipe-details">
+            <div class="recipe-column">
+              <h3>🧂 Ingredients</h3>
+              <ul>
+                <li>2 cups jasmine rice</li>
+                <li>10 butterfly pea flowers (dried)</li>
+                <li>1 cup grated coconut</li>
+                <li>100g long beans (chopped)</li>
+                <li>100g bean sprouts</li>
+                <li>2 cucumber (julienned)</li>
+                <li>Fish crackers</li>
+                <li>Salted egg</li>
+                <li>Fried chicken or fish</li>
+                <li><strong>Sambal:</strong></li>
+                <li>10 dried chilies</li>
+                <li>3 shallots</li>
+                <li>Belacan (shrimp paste)</li>
+                <li>Tamarind juice</li>
+              </ul>
+            </div>
+
+            <div class="recipe-column">
+              <h3>👨‍🍳 Instructions</h3>
+              <ol>
+                <li>Soak butterfly pea flowers, strain blue water.</li>
+                <li>Cook rice with blue water until blue colored.</li>
+                <li>Steam grated coconut with salt.</li>
+                <li>Blanch long beans and bean sprouts.</li>
+                <li>For sambal: blend chilies, shallots, belacan.</li>
+                <li>Cook sambal with tamarind juice.</li>
+                <li>Arrange blue rice on plate.</li>
+                <li>Top with steamed coconut, vegetables.</li>
+                <li>Serve with sambal, crackers, and proteins.</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="tips">
+            <p><strong>💡 Pro Tip:</strong> The blue color comes from butterfly pea flowers - completely natural! Adjust
+              the amount for desired color intensity.</p>
+          </div>
+
+          <div class="reviews">
+            <h3>💬 What Others Say</h3>
+            <p><em>"Beautiful blue rice! My kids love the colors and fresh flavors."</em></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Satar -->
+      <div class="recipe-card">
+        <img src="recipes/SatarD.png" alt="Satar" class="recipe-image">
+        <div class="recipe-content">
+          <h2 class="recipe-title">Satar Terengganu</h2>
+          <div class="recipe-meta">
+            <span> Prep: 40 mins</span>
+            <span> Cook: 15 mins</span>
+            <span> Difficulty: Hard</span>
+          </div>
+
+          <div class="highlights">
+            <p><strong>⏱ Total Time:</strong> 55 mins</p>
+            <p><strong>🍽 Servings:</strong> 6 people</p>
+            <p><strong>🌶 Spice Level:</strong> Medium</p>
+          </div>
+
+          <div class="gallery">
+            <img src="recipes/SatarI.png" alt="Fresh Ingredients">
+            <img src="recipes/SatarCP.png" alt="Grilled Wrapped Food">
+            <img src="recipes/SatarD2.png" alt="Satar Inner Picture">
+          </div>
+
+          <div class="recipe-details">
+            <div class="recipe-column">
+              <h3>🧂 Ingredients</h3>
+              <ul>
+                <li>500g mackerel fish (deboned)</li>
+                <li>100ml thick coconut milk</li>
+                <li>1 egg</li>
+                <li>2 tbsp tapioca starch</li>
+                <li>8 dried chilies (soaked)</li>
+                <li>4 shallots</li>
+                <li>3 garlic cloves</li>
+                <li>1 inch galangal</li>
+                <li>2 lemongrass stalks</li>
+                <li>1 tbsp palm sugar</li>
+                <li>Salt to taste</li>
+                <li>Coconut leaves for wrapping</li>
+              </ul>
+            </div>
+
+            <div class="recipe-column">
+              <h3>👨‍🍳 Instructions</h3>
+              <ol>
+                <li>Blend fish meat until smooth paste.</li>
+                <li>Blend chilies, shallots, garlic, galangal, lemongrass.</li>
+                <li>Mix fish paste with spice paste.</li>
+                <li>Add coconut milk, egg, starch, sugar, salt.</li>
+                <li>Mix until well combined and sticky.</li>
+                <li>Wrap mixture in coconut leaves.</li>
+                <li>Secure with toothpicks.</li>
+                <li>Grill over medium heat for 12-15 minutes.</li>
+                <li>Turn occasionally until cooked through.</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="tips">
+            <p><strong>💡 Pro Tip:</strong> Use banana leaves if coconut leaves unavailable. The fish paste should be
+              smooth and sticky for best texture.</p>
+          </div>
+
+          <div class="reviews">
+            <h3>💬 What Others Say</h3>
+            <p><em>"Authentic Terengganu taste! The coconut milk makes it so creamy."</em></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gulai Tempoyak Ikan Patin -->
+      <div class="recipe-card">
+        <img src="recipes/Gulai_Tempoyak_Ikan_PatinD.png" alt="Gulai Tempoyak" class="recipe-image">
+        <div class="recipe-content">
+          <h2 class="recipe-title">Gulai Tempoyak Ikan Patin</h2>
+          <div class="recipe-meta">
+            <span> Prep: 20 mins</span>
+            <span> Cook: 25 mins</span>
+            <span> Difficulty: Medium</span>
+          </div>
+
+          <div class="highlights">
+            <p><strong>⏱ Total Time:</strong> 45 mins</p>
+            <p><strong>🍽 Servings:</strong> 4 people</p>
+            <p><strong>🌶 Spice Level:</strong> Hot</p>
+          </div>
+
+          <div class="gallery">
+            <img src="recipes/Gulai_Tempoyak_Ikan_PatinI.png" alt="Preparation process">
+            <img src="recipes/Gulai_Tempoyak_Ikan_PatinCP.png" alt="Cooking Process">
+            <img src="recipes/Gulai_Tempoyak_Ikan_PatinD2.png" alt="Final Plated Dish">
+          </div>
+
+          <div class="recipe-details">
+            <div class="recipe-column">
+              <h3>🧂 Ingredients</h3>
+              <ul>
+                <li>1 whole patin fish (cut into steaks)</li>
+                <li>4 tbsp tempoyak (fermented durian)</li>
+                <li>400ml coconut milk</li>
+                <li>2 lemongrass stalks</li>
+                <li>4 kaffir lime leaves</li>
+                <li>2 turmeric leaves (optional)</li>
+                <li><strong>Spice Paste:</strong></li>
+                <li>8 dried chilies</li>
+                <li>6 shallots</li>
+                <li>4 garlic cloves</li>
+                <li>1 inch galangal</li>
+                <li>1 inch ginger</li>
+                <li>1 inch turmeric</li>
+              </ul>
+            </div>
+
+            <div class="recipe-column">
+              <h3>👨‍🍳 Instructions</h3>
+              <ol>
+                <li>Blend all spice paste ingredients.</li>
+                <li>Heat oil, fry spice paste until fragrant.</li>
+                <li>Add lemongrass and lime leaves.</li>
+                <li>Add tempoyak, cook for 2 minutes.</li>
+                <li>Pour coconut milk, bring to boil.</li>
+                <li>Add fish steaks gently.</li>
+                <li>Simmer for 15 minutes until fish is cooked.</li>
+                <li>Add turmeric leaves if using.</li>
+                <li>Season with salt and serve hot with rice.</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="tips">
+            <p><strong>💡 Pro Tip:</strong> Tempoyak is fermented durian paste - the key ingredient that gives this dish
+              its unique flavor!</p>
+          </div>
+
+          <div class="reviews">
+            <h3>💬 What Others Say</h3>
+            <p><em>"An acquired taste but absolutely delicious! The tempoyak adds incredible depth."</em></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hor Fun -->
+      <div class="recipe-card">
+        <img src="recipes/Hor_FunD.png" alt="Hor Fun" class="recipe-image">
+        <div class="recipe-content">
+          <h2 class="recipe-title">Wat Tan Hor Fun</h2>
+          <div class="recipe-meta">
+            <span> Prep: 15 mins</span>
+            <span> Cook: 12 mins</span>
+            <span> Difficulty: Medium</span>
+          </div>
+
+          <div class="highlights">
+            <p><strong>⏱ Total Time:</strong> 27 mins</p>
+            <p><strong>🍽 Servings:</strong> 2 people</p>
+            <p><strong>🌶 Spice Level:</strong> Mild</p>
+          </div>
+
+          <div class="gallery">
+            <img src="recipes/Hor_FunI.png" alt="Fresh Hor Fun Noodles">
+            <img src="recipes/Hor_FunCP.png" alt="Cooking Process">
+            <img src="recipes/Hor_FunD2.png" alt="Final Plated Dish">
+          </div>
+
+          <div class="recipe-details">
+            <div class="recipe-column">
+              <h3>🧂 Ingredients</h3>
+              <ul>
+                <li>400g fresh hor fun noodles</li>
+                <li>200g chicken (sliced)</li>
+                <li>100g prawns</li>
+                <li>100g fish cake (sliced)</li>
+                <li>200g choy sum</li>
+                <li>2 eggs (beaten)</li>
+                <li>3 garlic cloves (minced)</li>
+                <li>2 tbsp dark soy sauce</li>
+                <li>1 tbsp light soy sauce</li>
+                <li>1 tbsp oyster sauce</li>
+                <li>1 cup chicken stock</li>
+                <li>1 tbsp cornstarch mixed with water</li>
+              </ul>
+            </div>
+
+            <div class="recipe-column">
+              <h3>👨‍🍳 Instructions</h3>
+              <ol>
+                <li>Heat wok over high heat with oil.</li>
+                <li>Stir-fry noodles with soy sauces until coated.</li>
+                <li>Remove noodles and set aside.</li>
+                <li>Fry garlic until fragrant.</li>
+                <li>Add chicken and prawns, cook until done.</li>
+                <li>Add fish cake and vegetables.</li>
+                <li>Pour chicken stock, bring to boil.</li>
+                <li>Add cornstarch mixture to thicken.</li>
+                <li>Slowly drizzle beaten eggs while stirring.</li>
+                <li>Pour gravy over noodles and serve hot.</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="tips">
+            <p><strong>💡 Pro Tip:</strong> The key is the silky egg gravy - drizzle eggs slowly while stirring
+              continuously for smooth texture.</p>
+          </div>
+
+          <div class="reviews">
+            <h3>💬 What Others Say</h3>
+            <p><em>"Perfect comfort food! The egg gravy is silky smooth just like the restaurant."</em></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Satay -->
+      <div class="recipe-card">
+        <img src="recipes/SatayD.png" alt="Satay" class="recipe-image">
+        <div class="recipe-content">
+          <h2 class="recipe-title">Satay Ayam</h2>
+          <div class="recipe-meta">
+            <span> Prep: 45 mins</span>
+            <span> Cook: 15 mins</span>
+            <span> Difficulty: Medium</span>
+          </div>
+
+          <div class="highlights">
+            <p><strong>⏱ Total Time:</strong> 60 mins</p>
+            <p><strong>🍽 Servings:</strong> 4 people</p>
+            <p><strong>🌶 Spice Level:</strong> Medium</p>
+          </div>
+
+          <div class="gallery">
+            <img src="recipes/SatayI.png" alt="Satay Ingredients">
+            <img src="recipes/SatayCP.png" alt="Satay">
+            <img src="recipes/SatayD2.png" alt="Grilled Satay">
+          </div>
+
+          <div class="recipe-details">
+            <div class="recipe-column">
+              <h3>🧂 Ingredients</h3>
+              <ul>
+                <li>1kg chicken thigh (cubed)</li>
+                <li>2 tbsp turmeric powder</li>
+                <li>2 tbsp coriander powder</li>
+                <li>1 tbsp cumin powder</li>
+                <li>4 shallots (blended)</li>
+                <li>3 garlic cloves (blended)</li>
+                <li>2 tbsp palm sugar</li>
+                <li>Salt to taste</li>
+                <li>Wooden skewers (soaked)</li>
+                <li><strong>Peanut Sauce:</strong></li>
+                <li>200g roasted peanuts</li>
+                <li>4 dried chilies</li>
+                <li>2 shallots</li>
+                <li>Tamarind juice</li>
+                <li>Palm sugar</li>
+              </ul>
+            </div>
+
+            <div class="recipe-column">
+              <h3>👨‍🍳 Instructions</h3>
+              <ol>
+                <li>Mix all marinade ingredients.</li>
+                <li>Marinate chicken for at least 30 minutes.</li>
+                <li>Thread chicken onto skewers.</li>
+                <li>For sauce: blend peanuts, chilies, shallots.</li>
+                <li>Cook sauce with tamarind and sugar until thick.</li>
+                <li>Grill satay over charcoal, turning frequently.</li>
+                <li>Baste with leftover marinade while grilling.</li>
+                <li>Cook for 12-15 minutes until golden.</li>
+                <li>Serve hot with peanut sauce, cucumber, and rice cubes.</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="tips">
+            <p><strong>💡 Pro Tip:</strong> Use charcoal for authentic smoky flavor. Fan the charcoal to get that
+              perfect char!</p>
+          </div>
+
+          <div class="reviews">
+            <h3>💬 What Others Say</h3>
+            <p><em>"Brings back childhood memories! The peanut sauce is absolutely perfect."</em></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Siew Pao -->
+      <div class="recipe-card">
+        <img src="recipes/Siew_PauD.png" alt="Siew Pao" class="recipe-image">
+        <div class="recipe-content">
+          <h2 class="recipe-title">Siew Pao (Char Siu Bao)</h2>
+          <div class="recipe-meta">
+            <span> Prep: 60 mins</span>
+            <span> Cook: 20 mins</span>
+            <span> Difficulty: Hard</span>
+          </div>
+
+          <div class="highlights">
+            <p><strong>⏱ Total Time:</strong> 80 mins</p>
+            <p><strong>🍽 Servings:</strong> 8 buns</p>
+            <p><strong>🌶 Spice Level:</strong> Mild</p>
+          </div>
+
+          <div class="gallery">
+            <img src="recipes/Siew_PauI.png" alt="Char Siu Filling">
+            <img src="recipes/Siew_PauCP.png" alt="Cooking Process">
+            <img src="recipes/Siew_PauD2.png" alt="Final Plated Dish">
+          </div>
+
+          <div class="recipe-details">
+            <div class="recipe-column">
+              <h3>🧂 Ingredients</h3>
+              <ul>
+                <li><strong>Dough:</strong></li>
+                <li>300g plain flour</li>
+                <li>1 tsp instant yeast</li>
+                <li>1 tbsp sugar</li>
+                <li>1 tsp baking powder</li>
+                <li>150ml warm water</li>
+                <li>2 tbsp oil</li>
+                <li><strong>Filling:</strong></li>
+                <li>300g char siu (diced)</li>
+                <li>2 tbsp oyster sauce</li>
+                <li>1 tbsp dark soy sauce</li>
+                <li>1 tbsp cornstarch</li>
+                <li>1 tsp sesame oil</li>
+              </ul>
+            </div>
+
+            <div class="recipe-column">
+              <h3>👨‍🍳 Instructions</h3>
+              <ol>
+                <li>Mix flour, yeast, sugar, baking powder.</li>
+                <li>Add water and oil, knead into smooth dough.</li>
+                <li>Rest dough for 30 minutes until doubled.</li>
+                <li>Mix all filling ingredients.</li>
+                <li>Divide dough into 8 portions.</li>
+                <li>Roll each into circle, add filling.</li>
+                <li>Seal buns tightly, place on parchment.</li>
+                <li>Rest for 15 minutes.</li>
+                <li>Steam for 15-20 minutes over high heat.</li>
+                <li>Let rest 5 minutes before opening steamer.</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="tips">
+            <p><strong>💡 Pro Tip:</strong> Don't open the steamer immediately after cooking - let it rest to prevent
+              the buns from collapsing!</p>
+          </div>
+
+          <div class="reviews">
+            <h3>💬 What Others Say</h3>
+            <p><em>"Fluffy and delicious! Just like from the dim sum restaurant."</em></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chicken Rice Ball -->
+      <div class="recipe-card">
+        <img src="recipes/Chicken_Rice_BallD.png" alt="Chicken Rice Ball" class="recipe-image">
+        <div class="recipe-content">
+          <h2 class="recipe-title">Malacca Chicken Rice Ball</h2>
+          <div class="recipe-meta">
+            <span> Prep: 30 mins</span>
+            <span> Cook: 45 mins</span>
+            <span> Difficulty: Medium</span>
+          </div>
+
+          <div class="highlights">
+            <p><strong>⏱ Total Time:</strong> 75 mins</p>
+            <p><strong>🍽 Servings:</strong> 4 people</p>
+            <p><strong>🌶 Spice Level:</strong> Mild</p>
+          </div>
+
+          <div class="gallery">
+            <img src="recipes/Chicken_Rice_BallI.png" alt="Fresh Ingredients">
+            <img src="recipes/Chicken_Rice_BallCPpng.png" alt="Making Rice Balls">
+            <img src="recipes/Chicken_Rice_BallD2.png" alt="Final Plated Dish">
+          </div>
+
+          <div class="recipe-details">
+            <div class="recipe-column">
+              <h3>🧂 Ingredients</h3>
+              <ul>
+                <li>1 whole chicken</li>
+                <li>2 cups jasmine rice</li>
+                <li>3 tbsp chicken fat/oil</li>
+                <li>4 shallots (minced)</li>
+                <li>3 garlic cloves (minced)</li>
+                <li>1 inch ginger</li>
+                <li>Salt to taste</li>
+                <li><strong>Ginger Sauce:</strong></li>
+                <li>3 inch young ginger</li>
+                <li>2 tbsp light soy sauce</li>
+                <li>1 tbsp sesame oil</li>
+                <li>1 tsp sugar</li>
+                <li>Pinch of salt</li>
+              </ul>
+            </div>
+
+            <div class="recipe-column">
+              <h3>👨‍🍳 Instructions</h3>
+              <ol>
+                <li>Poach chicken in salted water with ginger.</li>
+                <li>Reserve chicken stock, set chicken aside.</li>
+                <li>Fry shallots and garlic in chicken fat.</li>
+                <li>Add rice, stir-fry until coated.</li>
+                <li>Add chicken stock, cook rice until done.</li>
+                <li>Let rice cool, then shape into balls.</li>
+                <li>Steam rice balls for 10 minutes.</li>
+                <li>For sauce: blend ginger with other ingredients.</li>
+                <li>Slice chicken and serve with rice balls.</li>
+                <li>Serve with ginger sauce and cucumber.</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="tips">
+            <p><strong>💡 Pro Tip:</strong> Wet your hands when shaping rice balls to prevent sticking. The rice should
+              be slightly sticky but not mushy.</p>
+          </div>
+
+          <div class="reviews">
+            <h3>💬 What Others Say</h3>
+            <p><em>"Such a unique way to serve chicken rice! The balls are perfectly seasoned."</em></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Otak-Otak -->
+      <div class="recipe-card">
+        <img src="recipes/OtakD.png" alt="Otak-Otak" class="recipe-image">
+        <div class="recipe-content">
+          <h2 class="recipe-title">Otak-Otak</h2>
+          <div class="recipe-meta">
+            <span> Prep: 35 mins</span>
+            <span> Cook: 15 mins</span>
+            <span> Difficulty: Medium</span>
+          </div>
+
+          <div class="highlights">
+            <p><strong>⏱ Total Time:</strong> 50 mins</p>
+            <p><strong>🍽 Servings:</strong> 6 people</p>
+            <p><strong>🌶 Spice Level:</strong> Medium</p>
+          </div>
+
+          <div class="gallery">
+            <img src="recipes/OtakI.png" alt="Fresh Ingredients">
+            <img src="recipes/OtakCP.png" alt="Cooking process">
+            <img src="recipes/OtakD2.png" alt="Grilled Otak-Otak">
+          </div>
+
+          <div class="recipe-details">
+            <div class="recipe-column">
+              <h3>🧂 Ingredients</h3>
+              <ul>
+                <li>500g white fish fillet</li>
+                <li>200ml coconut cream</li>
+                <li>2 eggs</li>
+                <li>2 tbsp tapioca starch</li>
+                <li>6 dried chilies (soaked)</li>
+                <li>4 shallots</li>
+                <li>3 garlic cloves</li>
+                <li>1 inch galangal</li>
+                <li>2 lemongrass stalks</li>
+                <li>1 tbsp belacan</li>
+                <li>2 tbsp palm sugar</li>
+                <li>Salt to taste</li>
+                <li>Banana leaves for wrapping</li>
+              </ul>
+            </div>
+
+            <div class="recipe-column">
+              <h3>👨‍🍳 Instructions</h3>
+              <ol>
+                <li>Blend fish until smooth paste.</li>
+                <li>Blend chilies, shallots, garlic, galangal, lemongrass, belacan.</li>
+                <li>Mix fish paste with spice paste.</li>
+                <li>Add coconut cream, eggs, starch, sugar, salt.</li>
+                <li>Mix until smooth and well combined.</li>
+                <li>Clean banana leaves, cut into rectangles.</li>
+                <li>Spoon mixture onto leaves, wrap securely.</li>
+                <li>Grill over medium heat for 12-15 minutes.</li>
+                <li>Turn occasionally until cooked through.</li>
+                <li>Serve hot from the leaf.</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="tips">
+            <p><strong>💡 Pro Tip:</strong> Blanch banana leaves in hot water to make them more pliable for wrapping.
+              The mixture should be thick but spreadable.</p>
+          </div>
+
+          <div class="reviews">
+            <h3>💬 What Others Say</h3>
+            <p><em>"Perfectly spiced and so fragrant! The banana leaf adds amazing aroma."</em></p>
+          </div>
+        </div>
+      </div>
+
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Malaysian Food Explorer | Images are for reference only</p>
+    <p>Follow us on social media for more food updates</p>
+    <p>
+      <img src="icon/fb.png" alt="Facebook">
+      <img src="icon/ig.png" alt="Instagram">
+      <img src="icon/yt.png" alt="YouTube">
+      <img src="icon/tw.png" alt="Twitter">
+    </p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="main.js"> </script>
+  <script src="recipes.js"> </script>
+</body>
+
+</html>

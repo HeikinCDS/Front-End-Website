@@ -1,0 +1,142 @@
+.profile-container1 {
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(135deg, #fdf6ee, #fce3d0);
+  overflow: hidden;
+}
+
+.profile-container1::before,
+.profile-container1::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.profile-container1::before {
+  width: 600px;
+  height: 600px;
+  background: #f5c7a9;
+  top: -200px;
+  left: -200px;
+}
+
+.profile-container1::after {
+  width: 500px;
+  height: 500px;
+  background: #f1a7a7;
+  bottom: -150px;
+  right: -150px;
+}
+
+.profile-container1 {
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(135deg, #fdf6ee, #fce3d0);
+  overflow: hidden;
+}
+
+.profile-container {
+  background: white;
+  width: 700px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  text-align: center;
+  z-index: 1;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.profile-container h2 {
+  font-size: 2em; /* bigger title */
+  font-weight: bold;
+  color: #e03636;
+  text-align: center; /* center text */
+  margin-bottom: 20px;
+}
+
+.profile-container h3 {
+  font-size: 1.4em;
+  color: #e03636;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.profile-info {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.profile-info label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 0.95em;
+}
+
+.profile-info input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 0.95em;
+  transition: 0.3s;
+}
+
+.profile-info input:focus {
+  outline: none;
+  border-color: #e03636;
+  box-shadow: 0 0 8px rgba(224, 54, 54, 0.3);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #e03636;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #c12d2d;
+  transform: scale(1.03);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .signup-card {
+    width: 90%;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-card {
+    width: 95%;
+    padding: 20px;
+  }
+  .signup-card h2 {
+    font-size: 1.5em;
+  }
+  button {
+    font-size: 1em;
+  }
+}

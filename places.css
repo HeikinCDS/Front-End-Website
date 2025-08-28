@@ -1,0 +1,232 @@
+    body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #222;
+        background-color: #fdf6ee;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Header styles provided by basic.css */
+    h2 {
+        color: #111;
+        border-bottom: 3px solid #ead9c7;
+        padding-bottom: 10px;
+        margin-top: 40px;
+        text-align: center;
+        font-size: 2.2em;
+        margin-bottom: 20px;
+    }
+
+    .maincontain {
+        max-width: 90%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+
+    .search-bar {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        margin: 30px 0;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .search-bar input {
+        flex: 1;
+        min-width: 240px;
+        padding: 12px 16px;
+        font-size: 1em;
+        border: 2px solid #e0e0e0;
+        border-radius: 25px;
+        background-color: #f8f9fa;
+        transition: all 0.3s ease;
+    }
+
+    .search-bar select {
+        min-width: 200px;
+        padding: 12px 16px;
+        font-size: 1em;
+        border: 2px solid #e0e0e0;
+        border-radius: 25px;
+        background-color: #f8f9fa;
+        transition: all 0.3s ease;
+    }
+
+    .places-container {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        margin-bottom: 40px;
+    }
+
+    .place-card {
+        background: white;
+        border-radius: 18px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #e9ecef;
+    }
+
+    .place-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    .place-image {
+        width: 100%;
+        height: 360px;
+        object-fit: contain;
+        background-color: #ffffff;
+        object-fit: cover;
+    }
+
+    .image-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  cursor: zoom-out;
+}
+
+.image-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.image-overlay img:hover {
+  transform: scale(1.05);
+}
+
+    /* All images use contain now (no per-item override needed) */
+
+    .place-content {
+        padding: 28px 28px 24px 28px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .place-title {
+        font-size: 1.6em;
+        margin: 0;
+        color: #111;
+    }
+
+    .place-meta {
+        color: #444;
+        font-size: 1.05em;
+    }
+
+    .place-actions {
+        margin-top: 12px;
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .place-actions a {
+        text-decoration: none;
+        color: #e31837;
+        font-weight: 600;
+    }
+
+    .recommended {
+        margin-top: 8px;
+    }
+
+    .recommended-title {
+        margin-top: 6px;
+        font-weight: 700;
+        color: #111;
+    }
+
+    .recommended-list {
+        margin: 6px 0 0 18px;
+    }
+
+    .recommended-list li {
+        margin-bottom: 6px;
+        color: #333;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .social-link {
+        display: inline-flex;
+        width: 28px;
+        height: 28px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social-link svg {
+        width: 24px;
+        height: 24px;
+        display: block;
+    }
+
+    /* For items without icon (no URL), keep text aligned with icon rows */
+    .recommended-list li.no-icon::before {
+        content: "";
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+    }
+
+    .icon-fb {
+        color: #1877F2;
+    }
+
+    .icon-ig {
+        color: #C13584;
+    }
+
+    .icon-web {
+        color: #111;
+    }
+
+    .panel {
+        background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+        border: 1px solid #e9ecef;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .place-actions {
+        margin: 0 auto;
+    }
+
+    /* Footer styles provided by basic.css */
+
+    @media (max-width: 900px) {
+        .place-image {
+            height: 260px;
+        }
+
+        .place-title {
+            font-size: 1.4em;
+        }
+
+        .place-content {
+            padding: 22px;
+        }
+    }

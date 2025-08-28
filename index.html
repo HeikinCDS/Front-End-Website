@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malaysian Street Food Home</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg " id="navbar">
+      <div class="container-fluid">
+        <div class="logo">
+          <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+            <img src="icon/mfelogo.png" alt="logo" class="logo-pic" width="100" height="100">
+            <span onclick="window.location.href='index.html'">Malaysian Food Explorer</span>
+          </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="top10.html">Top 10</a></li>
+            <li class="nav-item"><a class="nav-link" href="recipes.html">Recipes</a></li>
+            <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="places.html">Recommended Places</a></li>
+            <li class="nav-item"><a class="nav-link" href="spin.html">Spin</a></li>
+            <li class="nav-item"><a class="nav-link" href="map.html">Map</a></li>
+            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="login-wrapper">
+        <div class="user-dropdown">
+          <img src="icon/profilepic.png" class="profile-pic" width="40" />
+          <span id="userprofile"></span>
+          <div class="dropdown-content" id="dropdownContent">
+            <a href="#" id="userdrop1"></a>
+            <a href="#" id="userdrop2"></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container py-5 text-center">
+      <h1 class="display-5 fw-bold">Welcome to Malaysian Food Explorer</h1>
+      <p class="lead mx-auto" style="max-width: 900px;">Discover the best Malaysian street food and recipes. Get honest
+        reviews, easy-to-follow recipes, and must-visit local food spots. Whether you're traveling or hunting your next
+        bite, we’ve got your taste buds covered.</p>
+      <div class="d-flex justify-content-center gap-2">
+        <a href="top10.html" class="btn btn-danger">Explore Top 10</a>
+        <a href="places.html" class="btn btn-outline-dark">Find Places</a>
+      </div>
+    </section>
+    <section class="container pb-4" id="slidephoto">
+      <div id="foodCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="home/laksa.jpg" class="d-block w-100" alt="Laksa">
+          </div>
+          <div class="carousel-item">
+            <img src="home/murtabak.jpg" class="d-block w-100" alt="Murtabak">
+          </div>
+          <div class="carousel-item">
+            <img src="home/satay.jpeg" class="d-block w-100" alt="Satay">
+          </div>
+          <div class="carousel-item">
+            <img src="home/apambalik.jpg" class="d-block w-100" alt="Apam Balik">
+          </div>
+          <div class="carousel-item">
+            <img src="home/bak_kwa.jpg" class="d-block w-100" alt="Bak Kwa">
+          </div>
+          <div class="carousel-item">
+            <img src="home/ChaoKueyTeow.jpg" class="d-block w-100" alt="Char Kuey Teow">
+          </div>
+          <div class="carousel-item">
+            <img src="home/CheeCheongFun.jpg" class="d-block w-100" alt="Chee Cheong Fun">
+          </div>
+          <div class="carousel-item">
+            <img src="home/rotipisang.jpg" class="d-block w-100" alt="Roti Pisang">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#foodCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#foodCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="container py-4">
+      <h2 class="h3 text-center mb-4">Featured Sections</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="home/ChaoKueyTeow.jpg" class="card-img-top" alt="Recipes">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Recipes</h5>
+              <p class="card-text">Cook Malaysian classics at home with step-by-step guides.</p>
+              <div class="mt-auto">
+                <a href="recipes.html" class="btn btn-danger">Explore Recipes</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="home/satay.jpeg" class="card-img-top" alt="Reviews">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Reviews</h5>
+              <p class="card-text">Honest takes on street food—what’s worth your appetite.</p>
+              <div class="mt-auto">
+                <a href="reviews.html" class="btn btn-danger">Read Reviews</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="home/laksa.jpg" class="card-img-top" alt="Recommended Places">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Recommended Places</h5>
+              <p class="card-text">Go to must-visit stalls and hidden gems near you.</p>
+              <div class="mt-auto">
+                <a href="places.html" class="btn btn-danger">Find Places</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-4">
+      <h2 class="h3 mb-3">About Malaysian Food Explorer</h2>
+
+      <div class="description">
+        <div>
+          <img src="icon/mfelogo.png" alt="logo" class="logo-pic" width="200" height="200">
+        </div>
+        <p>
+          Malaysian Food Explorer is your guide to the nation’s vibrant street food scene. Explore
+          our top 10 food picks, cook along with easy recipes that anyone can follow, read honest reviews,
+          and explore must-visit eateries in our recommended places. Not sure what to try? Spin the wheel for a fun
+          pick.
+          Check the FAQ for any questions and answers. Discover, cook, and taste Malaysia — all in one place.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Malaysian Food Explorer | Images are for reference only</p>
+    <p>Follow us on social media for more food updates</p>
+    <p>
+      <img src="icon/fb.png" alt="Facebook">
+      <img src="icon/ig.png" alt="Instagram">
+      <img src="icon/yt.png" alt="YouTube">
+      <img src="icon/tw.png" alt="Twitter">
+    </p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

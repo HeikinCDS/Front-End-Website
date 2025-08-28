@@ -1,0 +1,147 @@
+.column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    animation: moveRight 30s linear infinite;
+    overflow: hidden;
+    display: inline-flex;
+    white-space: nowrap;
+}
+
+.column img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+#slidephoto {
+  width: 100%;
+  max-width: 100%;      
+}
+
+#slidephoto .carousel-item {
+  height: 500px;        
+}
+
+#slidephoto img {
+  width: 100%;
+  height: 100%;  
+  object-fit: cover;    
+}
+
+.mt-auto {
+    margin: 0 auto;
+}
+
+.left-to-right {
+    animation: moveRight 15s linear infinite;
+    animation-delay: -9s;
+}
+
+.card-img-top {
+    height: 60%;
+}
+
+section.container.py-4 {
+  text-align: center;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;    /* Stack image on top of text */
+  align-items: center;       /* Center both horizontally */
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;        /* Center the text */
+}
+
+.logo-pic {
+  border-radius: 50%;        /* Makes logo circular */
+  margin-bottom: 15px;       /* Space between image & text */
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.description {
+    text-align: left;
+    text-justify: auto;
+    font-size: 20px;
+}
+
+@media (max-width: 992px) {
+    .column img {
+        width: 150px;
+    }
+
+    #slidephoto .carousel-item {
+        height: 400px;
+    }
+
+    .description {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .card-img-top {
+        height: auto;
+    }
+}
+
+/* Mobile Landscape (≤ 768px) */
+@media (max-width: 768px) {
+    .column {
+        flex-direction: column; /* Stack images vertically */
+        white-space: normal;
+    }
+
+    .column img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    #slidephoto .carousel-item {
+        height: 300px;
+    }
+
+    .description {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+/* Mobile Portrait (≤ 576px) */
+@media (max-width: 576px) {
+    .column img {
+        width: 90%;
+        max-width: 250px;
+    }
+
+    #slidephoto .carousel-item {
+        height: 250px;
+    }
+
+    .description {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .logo-pic {
+        width: 80px;
+        height: 80px;
+    }
+}

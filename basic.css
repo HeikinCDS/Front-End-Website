@@ -197,16 +197,25 @@ footer img{
 
 /* Mobile view */
 @media (max-width: 768px) {
+  header {
+    flex-wrap: nowrap;
+    /* keep items in one line */
+  }
+
+  .logo {
+    font-size: 1.2em;
+    /* smaller logo text */
+  }
+
   .nav-menu {
     display: none;
-    /* hide menu by default */
+    /* hidden by default */
     flex-direction: column;
-    /* stack vertically */
     width: 100%;
     background-color: #ead9c7;
     position: absolute;
-    top: 80px;
-    /* adjust based on header height */
+    top: 70px;
+    /* below header */
     left: 0;
     padding: 10px 0;
   }
@@ -220,11 +229,16 @@ footer img{
     display: block;
     font-size: 2em;
     cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .login-wrapper {
     margin-left: auto;
+    /* keep login button at the end */
   }
 }
 
-/* Hide hamburger on desktop */
+/* Desktop view */
 .hamburger {
   display: none;
 }
